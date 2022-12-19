@@ -1,13 +1,10 @@
 import "./App.css";
-import Button from "@mui/material/Button";
-import AppBar from "@mui/material/AppBar";
-import ToolBar from "@mui/material/ToolBar";
-import Header from "../src/components/Header";
+import { Router } from "./routes/Routes";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Router />
     </div>
   );
 }
