@@ -12,19 +12,66 @@ export const Navbar = () => {
         style={{
           backgroundColor: "transparent",
           boxShadow: "0px 0px 0px 0px",
-          padding: "16px 32px",
+          padding: "16px 10px",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <ToolBar sx={{ marginLeft: "right" }}>
-          <Link to="/">
-            <Button sx={{ typography: "h6" }}> Joffee </Button>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Button
+              sx={{
+                typography: "h5",
+                paddingRight: "45px",
+                paddingLeft: "45px",
+                color: "black",
+              }}
+            >
+              Dulce Cafe
+            </Button>
           </Link>
 
-          <Button sx={{ typography: "h6" }}> Shop </Button>
-          <Button sx={{ typography: "h6", marginLeft: "auto" }}> FAQ </Button>
+          <Button
+            sx={{
+              typography: "h5",
+              paddingRight: "45px",
+              paddingLeft: "45px",
+              color: "black",
+            }}
+          >
+            {" "}
+            Shop{" "}
+          </Button>
+          <Button
+            sx={{
+              typography: "h5",
+              paddingRight: "45px",
+              paddingLeft: "45px",
+              color: "black",
+            }}
+          >
+            {" "}
+            FAQ{" "}
+          </Button>
 
-          <Button sx={{ typography: "h6" }}>
-            <Link to="about"> About </Link>
+          <Button
+            sx={{
+              typography: "h5",
+              paddingRight: "45px",
+              paddingLeft: "45px",
+              color: "black",
+              backgroundColor: "transparent",
+              underline: "none",
+            }}
+          >
+            <Link
+              to="about"
+              underline="none"
+              style={{ textDecoration: "none" }}
+            >
+              {" "}
+              About{" "}
+            </Link>
           </Button>
         </ToolBar>
       </AppBar>

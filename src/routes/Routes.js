@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 
 export const Router = () => {
   return (
-    <div>
+    <div style={{ height: window.innerHeight, width: window.innerWidth }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
